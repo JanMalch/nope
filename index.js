@@ -103,6 +103,10 @@ async function main() {
   console.log('Writing .versionrc.json');
   await fs.writeFile('.versionrc.json', versionRcFile, 'utf8');
 
+  if (withTypescript) {
+    await runCommand('tsc --init');
+  }
+
   await runCommand('npm rebuild');
   await runCommand('npm run prettier');
 
