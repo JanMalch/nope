@@ -1,7 +1,7 @@
 {
   "name": "nope",
   "version": "1.0.0",
-  "description": "",
+  "description": "A single command that takes care of essentials packages.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
