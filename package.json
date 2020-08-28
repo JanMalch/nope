@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint *.{js,jsx,ts,tsx}",
     "prettier": "\"npx prettier --write **/*.{ts,html,scss,json,js,json,md,yaml} --ignore-path .gitignore\"",
-    "release": "npx standard-version"
+    "release": "npx standard-version",
+    "postrelease": "git push --follow-tags origin master"
   },
   "keywords": [],
   "author": "JanMalch",
