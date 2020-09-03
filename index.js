@@ -104,7 +104,7 @@ async function main() {
   await fs.writeFile('.versionrc.json', versionRcFile, 'utf8');
 
   if (withTypescript) {
-    await runCommand('tsc --init');
+    await runCommand('npx tsc --init');
   }
 
   await runCommand('npm rebuild');
